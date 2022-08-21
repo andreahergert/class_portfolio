@@ -1,6 +1,9 @@
 :root {
     --gray: #9EA3B0;
     --tea-green: #96C0B7;
+    --dark-teal: #335C67;
+    --dark-purple: #28112B;
+    --dark-rose: #4C2F3A;
 }
 
 * {
@@ -8,15 +11,22 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--gray);
     margin: 0;
 }
 
 header {
     text-align: left;
-    background-color: #335C67;
+    background-color: var(--dark-teal);
+    color: var(--dark-purple);
+}
+
+
+nav a{
     color: var(--tea-green);
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .banner {
@@ -39,6 +49,7 @@ main {
 }
 
 aside {
+    color: var(--dark-rose);
     flex: 1;
     background-color: var(--gray);
     padding: 80px;
@@ -71,9 +82,16 @@ aside {
     width: 25%;
 }
 
+/* potential move headers on work card, can't seem to avoid them hiding behind image
 .work-card header {
-    display: flex;
-    padding: 5px;
+  position: relative;
+  margin-top: 200px;
+}
+    */
+
+.work-card-header {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 
@@ -86,6 +104,17 @@ aside {
 .work-card img:hover {
     cursor: pointer;
     filter: opacity(100%);
+}
+
+.footer {
+    margin: auto;
+
+}
+.footer a {
+    color: var(--dark-purple);
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color: var(--dark-rose);
 }
 
 
