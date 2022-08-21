@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Andrea Hergert's Portfolio</title>
 </head>
 
@@ -12,16 +12,19 @@
     <header>
         <h1>Andrea Hergert's Portfolio</h1>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">Work</a>
-            <a href="#">Contact Me</a>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
             <!-- insert link for resume -->
-            <a href="#Resume">Resume</a>
+            <a href="https://www.linkedin.com/in/andreahergert/overlay/1635499835992/single-media-viewer/"
+                target="_blank">Resume</a>
         </nav>
     </header>
 
-    <!-- Subtitle Banner -->
-    <figure class="hero" role="img" alt=""></figure>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./assets/images/andrea-hergert.jpg" alt="photo of Andrea Hergert" />
+    </div>
 
     <!-- Body -->
     <main>
@@ -32,59 +35,95 @@
             <h2>Contact Me</h2>
         </aside>
 
-        <!-- Content on right-side -->
-        <div class="content">
-            <!-- About Me Area  -->
-            <section class="about-me-text">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro quas dolores.
-                    Necessitatibus eligendi doloribus quisquam aliquid unde! Iste assumenda vitae, a quos pariatur
-                    nesciunt hic eaque animi eum neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                    veritatis laborum. Eveniet iure iusto vitae, autem illum ullam qui ex consequuntur dignissimos
-                    tempora nobis illo et ut aut enim rem?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro quas dolores.
-                    Necessitatibus eligendi doloribus quisquam aliquid unde! Iste assumenda vitae, a quos pariatur
-                    nesciunt hic eaque animi eum neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                    veritatis laborum. Eveniet iure iusto vitae, autem illum ullam qui ex consequuntur dignissimos
-                    tempora nobis illo et ut aut enim rem?
-                </p>
-            </section>
-        </div>
+        <!-- Right Side of the Page Content-->
+        <div class="right-side-content">
+            <div class="content">
+                <!-- Inside About Me Area  -->
+                <section class="about-me-text" id="about-me">
+                    <p>
+                        I am a former Librarian interested in web development. I have fourteen years of library
+                        experience, with six of those years working for Jefferson County Library as a Librarian I in
+                        Information Services/Cataloging. As a Librarian I in Information Services/Cataloging at
+                        Jefferson County Library I assisted patrons and demonstrated the use of reference resources at
+                        the information desk, helped patrons with item requests, and helped patrons with the public
+                        computers as well as with their own tech devices. My other tasks include cataloging, collection
+                        development, and library programming.
+                    </p>
+                    <p>
 
-        <!-- Work Area -->
-        <div class="card">
-            <section class="work-card">
-                <header class="work-card-header">Surf Report</header>
-                <header class="work-card-header-small">MERN Stack</header>
-            </section>
-            <section class="work-card">
-                <header class="work-card-header">LED Wall</header>
-                <header class="work-card-header-small">Node/IoT</header>
-            </section>
-            <section class="work-card">
-                <header class="work-card-header">Calculator</header>
-                <header class="work-card-header-small">React/JavaScript/CSS</header>
-            </section>
-            <section class="work-card">
-                <header class="work-card-header">Pastel Puzzels</header>
-                <header class="work-card-header-small">MERN Stack</header>
-            </section>
-            <section class="work-card">
-                <header class="work-card-header">Run Buddy</header>
-                <header class="work-card-header-small">HTML/CSS</header>
-            </section>
-        </div>
+                        My previous employment was for nearly two years as a Library Assistant in Cataloging at Whitman
+                        College. My main task there was providing original and copy cataloging of books, DVDs, and
+                        electronic resources. Another responsibility I had was supervising student workers which
+                        included monitoring their work, approving schedules, checking timesheets, and training them to
+                        catalog government documents.
 
-        <!-- Contact Me Area -->
-        <footer class="footer">
-            <a>509-288-0308</a>
-            <a>ahergert24@hotmail.com</a>
-            <a href="https://github.com/andreahergert">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-        </footer>
+
+                    </p>
+                    <p>
+                        My first library job was for six years as a Library Assistant at the Whitman County Library. My
+                        main duties as a Library Assistant were helping library patrons at the reference and circulation
+                        desk, coordinating a home library delivery service at two senior living facilities, purchasing
+                        and managing the collection for popular movies, music, and eBooks. Also, I was teaching public
+                        programs about eBooks, social media, and internet safety, assisting with interlibrary loan, and
+                        cataloging movies, music, and large-print books.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Work Area -->
+            <div class="card">
+                <section class="work-card" id="work">
+                    <header class="work-card-header">Surf Report</header>
+                    <header class="work-card-header-small">MERN Stack</header>
+                    <!-- Will update link below once there is work to show -->
+                    <a href="assets/images/placeholder.png" target="_blank">
+                        <img src="./assets/images/seastacks.jpg" alt="seastacks in ocean at sunset" />
+                    </a>
+                </section>
+                <section class="work-card">
+                    <header class="work-card-header">LED Wall</header>
+                    <header class="work-card-header-small">Node/IoT</header>
+                    <!-- Will update link below once there is work to show -->
+                    <a href="assets/images/placeholder.png" target="_blank">
+                        <img src="./assets/images/aurora.jpg" alt="snow covered road under aurora borealis" />
+                    </a>
+                </section>
+                <section class="work-card">
+                    <header class="work-card-header">Calculator</header>
+                    <header class="work-card-header-small">React/JavaScript/CSS</header>
+                    <!-- Will update link below once there is work to show -->
+                    <a href="assets/images/placeholder.png" target="_blank">
+                        <img src="./assets/images/dandelion.jpg" alt="close up photo of white dandelion head" />
+                    </a>
+                </section>
+                <section class="work-card">
+                    <header class="work-card-header">Pastel Puzzels</header>
+                    <header class="work-card-header-small">MERN Stack</header>
+                    <!-- Will update link below once there is work to show -->
+                    <a href="assets/images/placeholder.png" target="_blank">
+                        <img src="./assets/images/lake.jpg" alt=" lake surrounded by trees and snowy mountains" />
+                    </a>
+                </section>
+                <section class="work-card">
+                    <header class="work-card-header">Run Buddy</header>
+                    <header class="work-card-header-small">HTML/CSS</header>
+                    <!-- Will update link below once there is work to show -->
+                    <a href="assets/images/placeholder.png" target="_blank">
+                        <img src="./assets/images/road.jpg" alt="dirt road through a green forrest" />
+                    </a>
+                </section>
+            </div>
+
+
+            <!-- Contact Me Area -->
+            <footer class="footer" id="contact-me">
+                <a href=tel:509-288-0308>509-288-0308</a>
+                <a href=mailto:ahergert24@hotmail.com>ahergert24@hotmail.com</a>
+                <a href="https://github.com/andreahergert" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/andreahergert/" target="_blank">LinkedIn</a>
+                <a href="https://www.twiter.com/andreahergert" target="_blank">Twitter</a>
+            </footer>
+        </div>
 </body>
 
 </html>
