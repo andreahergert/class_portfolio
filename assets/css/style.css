@@ -1,1 +1,128 @@
-/* Style page */
+:root {
+    --gray: #9EA3B0;
+    --tea-green: #96C0B7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--gray);
+    margin: 0;
+}
+
+header {
+    text-align: left;
+    background-color: #335C67;
+    color: var(--tea-green);
+}
+
+.banner {
+    background-color: #A18276;
+
+}
+
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+}
+
+aside {
+    flex: 1;
+    background-color: var(--gray);
+    padding: 80px;
+    text-align: right;
+
+}
+
+.right-side-content {
+    flex: 7;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.content {
+    font: 12pt;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-card {
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--tea-green);
+    margin: 5px;
+    width: 25%;
+}
+
+.work-card header {
+    display: flex;
+    padding: 5px;
+}
+
+
+.work-card img {
+    display: block;
+    width: 100%;
+    filter: opacity(75%);
+}
+
+.work-card img:hover {
+    cursor: pointer;
+    filter: opacity(100%);
+}
+
+
+/* Tablets*/
+@media screen and (max-width: 992px) {
+    .card {
+        width: 25%;
+    }
+
+    .card .work-card {
+        width: 25%;
+    }
+
+}
+
+/* Large smartphones*/
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card .work-card {
+        width: 50%;
+    }
+}
+
+/* Small smartphones*/
+@media screen and (max-width: 576px) {
+    .card {
+        width: 75%;
+    }
+
+    .card .work-card {
+        width: 75%;
+    }
+}
