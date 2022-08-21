@@ -17,30 +17,14 @@ body {
 }
 
 header {
-    text-align: left;
     background-color: var(--dark-teal);
     color: var(--dark-purple);
 }
 
-
-nav a{
+nav a {
     color: var(--tea-green);
     font-size: larger;
     text-decoration: underline;
-}
-
-.banner {
-    background-color: #A18276;
-
-}
-
-.banner img {
-    display: block;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 200px;
-    max-width: 200px;
 }
 
 main {
@@ -53,9 +37,30 @@ aside {
     color: var(--dark-rose);
     flex: 1;
     background-color: var(--gray);
-    padding: 80px;
+    border-right: 3px solid var(--dark-teal);
     text-align: right;
+}
 
+h2 {
+    color: var(--dark-purple);
+}
+
+.nav {
+    text-align: right;
+    margin-right: 2px;
+}
+
+.banner {
+    background-color: #A18276;
+}
+
+.banner img {
+    display: block;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .right-side-content {
@@ -77,24 +82,15 @@ aside {
 
 .work-card {
     border-style: solid;
-    border-width: 5px;
     border-color: var(--tea-green);
     margin: 5px;
-    width: 25%;
+    width: 35%;
 }
-
-/* potential move headers on work card, can't seem to avoid them hiding behind image
-.work-card header {
-  position: relative;
-  margin-top: 200px;
-}
-    */
 
 .work-card-header {
     font-size: larger;
     font-weight: bolder;
 }
-
 
 .work-card img {
     display: block;
@@ -108,9 +104,10 @@ aside {
 }
 
 .footer {
-    margin: auto;
+    text-align: center;
 
 }
+
 .footer a {
     color: var(--dark-purple);
     font-size: larger;
@@ -118,41 +115,42 @@ aside {
     text-decoration-color: var(--dark-rose);
 }
 
+#work-first-image {
+    border-style: solid;
+    border-color: var(--tea-green);
+    margin: 5px;
+    width: 70%;
+}
 
 /* Tablets*/
 @media screen and (max-width: 992px) {
-    .card {
-        width: 25%;
+    .work-card {
+        width: 70%;
     }
 
-    .card .work-card {
-        width: 25%;
+    #work-first-image {
+        width: 70%;
     }
-
 }
 
 /* Large smartphones*/
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
+    .work-card {
+        width: 120%;
     }
 
-    .card {
-        width: 50%;
-    }
-
-    .card .work-card {
-        width: 50%;
+    #work-first-image {
+        width: 120%;
     }
 }
 
 /* Small smartphones*/
 @media screen and (max-width: 576px) {
-    .card {
-        width: 75%;
+    .work-card {
+        width: 170%;
     }
 
-    .card .work-card {
-        width: 75%;
+    #work-first-image {
+        width: 170%;
     }
 }
